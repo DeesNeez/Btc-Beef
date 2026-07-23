@@ -503,6 +503,14 @@ section {
 }
 
 /* Farm gallery */
+.why-us {
+  padding-bottom: 48px;
+}
+
+.gallery {
+  padding-top: 48px;
+}
+
 .gallery .swiper-slide a {
   display: block;
   overflow: hidden;
