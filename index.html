@@ -5,9 +5,28 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BTCBeef.com</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>BTC Beef | Grass-Fed Red Angus Beef in Caledonia, Ontario</title>
+  <meta name="description" content="Farm-direct, grass-fed Red Angus beef raised in Caledonia, Ontario. Explore premium beef boxes, quarter and half beef, and local delivery options.">
+  <meta name="theme-color" content="#b80f12">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://btcbeef.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:site_name" content="BTC Beef">
+  <meta property="og:title" content="BTC Beef | From Our Pasture to Your Plate">
+  <meta property="og:description" content="Farm-direct, grass-fed Red Angus beef raised in Caledonia, Ontario.">
+  <meta property="og:url" content="https://btcbeef.com/">
+  <meta property="og:image" content="https://btcbeef.com/assets/img/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Premium cuts of beef from BTC Beef">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@BTCBeefCA">
+  <meta name="twitter:title" content="BTC Beef | From Our Pasture to Your Plate">
+  <meta name="twitter:description" content="Farm-direct, grass-fed Red Angus beef raised in Caledonia, Ontario.">
+  <meta name="twitter:image" content="https://btcbeef.com/assets/img/social-card.jpg">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -16,7 +35,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,18 +44,42 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Site CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "BTC Beef",
+      "url": "https://btcbeef.com/",
+      "image": "https://btcbeef.com/assets/img/social-card.jpg",
+      "description": "Farm-direct, grass-fed Red Angus beef raised in Caledonia, Ontario.",
+      "email": "btcbeef@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Caledonia",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "sameAs": [
+        "https://x.com/BTCBeefCA"
+      ]
+    }
+  </script>
 
 </head>
 
 <body>
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo me-auto me-lg-0">
-        <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg1" width="457.33334" height="104" viewBox="0 0 457.33334 104" sodipodi:docname="BEEF_CA VECTOR7.eps">
+      <a href="#hero" class="logo me-auto me-lg-0" aria-label="BTC Beef home">
+        <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg1" width="457.33334" height="104" viewBox="0 0 457.33334 104" sodipodi:docname="BEEF_CA VECTOR7.eps" aria-hidden="true" focusable="false">
           <defs id="defs1"/>
           <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1">
             <inkscape:page x="0" y="0" inkscape:label="1" id="page1" width="457.33334" height="104" margin="0" bleed="0"/>
@@ -54,19 +97,19 @@
           </g>
         </svg>
       </a>
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar" aria-label="Main navigation">
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Cuts</a></li>
           <li><a href="#chefs">Prices</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
       <a class="btn-book-a-table" href="#contact">Order Now</a>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <button class="mobile-nav-toggle" type="button" aria-controls="navbar" aria-expanded="false" aria-label="Open menu">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
 
     </div>
   </header><!-- End Header -->
@@ -74,16 +117,23 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
-      <div class="row justify-content-between gy-5">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">From Our Pasture<br>To Your Plate</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Premium Grass-Fed Red Angus Beef. Straight to your door.</p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#contact" class="btn-book-a-table">Order Now</a>
+      <div class="row align-items-center justify-content-between gy-5">
+        <div class="col-lg-5 hero-content d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start">
+          <p class="hero-eyebrow" data-aos="fade-up">Caledonia, Ontario · Farm Direct</p>
+          <h1 data-aos="fade-up" data-aos-delay="50">From Our Pasture<br>to Your Plate</h1>
+          <p class="hero-lead" data-aos="fade-up" data-aos-delay="100">Premium grass-fed Red Angus beef, raised with care and delivered straight to your door.</p>
+          <div class="hero-actions d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-delay="150">
+            <a href="#chefs" class="btn-book-a-table">Shop Beef Options</a>
+            <a href="#about" class="btn-secondary-action">Meet the Farm</a>
           </div>
+          <ul class="hero-highlights" data-aos="fade-up" data-aos-delay="200">
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Local Red Angus</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Full 1-inch cuts</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Direct delivery</li>
+          </ul>
         </div>
-        <div class="col-lg-7 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/menu/hero.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        <div class="col-lg-7 hero-media text-center" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/menu/hero.webp" width="1600" height="1067" class="img-fluid" alt="Two marbled beef steaks with fresh herbs and vegetables" fetchpriority="high" decoding="async">
         </div>
       </div>
     </div>
@@ -96,29 +146,29 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>About</h2>
-          <p>Our <span>Mission</span></p>
+          <p class="section-kicker">About</p>
+          <h2>Our <span>Mission</span></h2>
         </div>
 
-        <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/menu/hero-10.jpg) ;" data-aos="fade-up" data-aos-delay="150">
+        <div class="row gy-4 align-items-stretch">
+          <div class="col-lg-7 position-relative about-img about-farm-image" role="img" aria-label="Red Angus cattle grazing on the BTC Beef farm" data-aos="fade-up" data-aos-delay="100">
           </div>
-          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="180">
             <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                BTC Beef is redefining the beef industry through peer-to-peer connections and decentralized food distribution. We deliver high-quality beef directly to our customers, embracing sound money principles and supporting a sustainable, circular economy.
+              <p class="about-lead">
+                BTC Beef connects local customers directly with the farm—fewer middlemen, clear sourcing, and better value from pasture to plate.
               </p>
               <ul>
-                <li><i class="bi bi-check2-all"></i> Premium Quality</li>
-                <li><i class="bi bi-check2-all"></i> Unmatched Affordability</li>
-                <li><i class="bi bi-check2-all"></i> Community Focused</li>
+                <li><i class="bi bi-check2-all" aria-hidden="true"></i> Premium, carefully prepared cuts</li>
+                <li><i class="bi bi-check2-all" aria-hidden="true"></i> Fair, transparent pricing</li>
+                <li><i class="bi bi-check2-all" aria-hidden="true"></i> A stronger local food system</li>
               </ul>
               <p>
-                When you order from us, you can be confident that every cut of beef comes from carefully raised Red Angus cattle, managed with regenerative and sustainable rotational grazing practices on our farm in Caledonia, Ontario.
+                Every cut comes from carefully raised Red Angus cattle managed with regenerative, rotational grazing practices on our farm in Caledonia. Our peer-to-peer approach reflects the sound-money principles behind the BTC Beef name.
               </p>
 
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-3.jpeg" class="img-fluid" alt="">
+              <div class="position-relative mt-4 about-detail-image">
+                <img src="assets/img/about-3.webp" width="1024" height="859" class="img-fluid" alt="A Red Angus cow and calf on the farm" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -130,17 +180,18 @@
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
       <div class="container" data-aos="fade-up">
+        <h2 class="visually-hidden">Why choose BTC Beef</h2>
 
         <div class="row gy-4">
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
-              <h3>Why Choose BTC BEEF?</h3>
+              <h3>Why Choose BTC Beef?</h3>
               <p>
-                We raise premium, grass-fed beef on our local farm and deliver it straight to your door. Every cut is hand-prepared to a full 1-inch thickness, ensuring rich flavor, tenderness, and a true farm-to-table experience.
+                We raise premium, grass-fed beef on our local farm and deliver it straight to your door. Our steaks are prepared to a generous 1-inch thickness for a satisfying farm-to-table experience.
               </p>
               <div class="text-center">
-                <a href="#contact" class="more-btn">Order Now<i class="bx bx-chevron-right"></i></a>
+                <a href="#chefs" class="more-btn">See Beef Options <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
               </div>
             </div>
           </div><!-- End Why Box -->
@@ -150,25 +201,25 @@
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
+                  <i class="bi bi-award" aria-hidden="true"></i>
                   <h4>Quality</h4>
-                  <p>Thick, juicy cuts crafted to restaurant standards. The same quality top chefs demand, now delivered straight to your door.</p>
+                  <p>Generous cuts of carefully raised Red Angus beef, prepared with flavour and tenderness in mind.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-gem"></i>
-                  <h4>Affordability</h4>
-                  <p>Pound for pound, our beef offers unbeatable value at prices competitive with both local farmers and grocery stores.</p>
+                  <i class="bi bi-tag" aria-hidden="true"></i>
+                  <h4>Value</h4>
+                  <p>Farm-direct pricing keeps the process simple and gives you more clarity about what you are buying.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
+                  <i class="bi bi-geo-alt" aria-hidden="true"></i>
                   <h4>Community</h4>
-                  <p>Supporting local farms ensures a healthy, transparent, and reliable food supply. One you can see, verify, and rely on.</p>
+                  <p>Supporting a local farm helps build a transparent and reliable food supply you can see and trust.</p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -181,24 +232,24 @@
     </section><!-- End Why Us Section -->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery section-bg">
+    <section id="gallery" class="gallery section-bg" aria-labelledby="gallery-title">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>gallery</h2>
-          <p>The <span>Farm</span></p>
+          <p class="section-kicker">Gallery</p>
+          <h2 id="gallery-title">The <span>Farm</span></h2>
         </div>
 
         <div class="gallery-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.webp"><img src="assets/img/gallery/gallery-7.webp" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.webp" aria-label="View cattle grazing photo larger"><img src="assets/img/gallery/gallery-2.webp" width="1200" height="900" class="img-fluid" alt="Red Angus cattle grazing in tall summer grass" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.webp" aria-label="View rotational grazing photo larger"><img src="assets/img/gallery/gallery-3.webp" width="1200" height="900" class="img-fluid" alt="Red Angus cattle grazing among mature trees" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.webp" aria-label="View BTC Beef herd photo larger"><img src="assets/img/gallery/gallery-4.webp" width="1423" height="1067" class="img-fluid" alt="The BTC Beef herd spread across a Caledonia pasture" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.webp" aria-label="View Red Angus cattle photo larger"><img src="assets/img/gallery/gallery-5.webp" width="923" height="692" class="img-fluid" alt="Two Red Angus cattle standing with a farmer" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.webp" aria-label="View Red Angus herd photo larger"><img src="assets/img/gallery/gallery-1.webp" width="1600" height="1200" class="img-fluid" alt="Red Angus cows and calves resting in a green pasture" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.webp" aria-label="View pasture sunset photo larger"><img src="assets/img/gallery/gallery-6.webp" width="1240" height="930" class="img-fluid" alt="Cattle grazing as the sun sets over the pasture" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.webp" aria-label="View herd photo larger"><img src="assets/img/gallery/gallery-7.webp" width="1600" height="1202" class="img-fluid" alt="The farmer standing in front of the BTC Beef herd" loading="lazy" decoding="async"></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.webp" aria-label="View Red Angus photo larger"><img src="assets/img/gallery/gallery-8.webp" width="1600" height="1200" class="img-fluid" alt="A farmer standing beside a Red Angus cow" loading="lazy" decoding="async"></a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -206,228 +257,302 @@
       </div>
     </section><!-- End Gallery Section -->
 
-    <!-- ======= Stats Counter Section ======= -->
-    <section id="stats-counter" class="stats-counter">
-      <div class="container" data-aos="zoom-out">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="39" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="86" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Orders</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Years of Operation</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Butcher</p>
-            </div>
-          </div><!-- End Stats Item -->
+    <!-- ======= Trust Strip ======= -->
+    <section id="stats-counter" class="trust-strip" aria-labelledby="trust-strip-title">
+      <div class="container" data-aos="fade-up">
+        <h2 id="trust-strip-title" class="visually-hidden">What sets BTC Beef apart</h2>
+        <div class="row g-0">
+          <div class="col-6 col-lg-3 trust-item">
+            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+            <div><strong>Caledonia Raised</strong><span>Local Ontario beef</span></div>
+          </div>
+          <div class="col-6 col-lg-3 trust-item">
+            <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+            <div><strong>Rotational Grazing</strong><span>Managed pasture care</span></div>
+          </div>
+          <div class="col-6 col-lg-3 trust-item">
+            <i class="bi bi-rulers" aria-hidden="true"></i>
+            <div><strong>Generous Cuts</strong><span>Full 1-inch steaks</span></div>
+          </div>
+          <div class="col-6 col-lg-3 trust-item">
+            <i class="bi bi-truck" aria-hidden="true"></i>
+            <div><strong>Farm Direct</strong><span>Delivered to your door</span></div>
+          </div>
         </div>
       </div>
-    </section><!-- End Stats Counter Section -->
+    </section><!-- End Trust Strip -->
 
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Meat</h2>
-          <p>Our <span>Cuts</span></p>
+          <p class="section-kicker">Meat</p>
+          <h2>Our <span>Cuts</span></h2>
         </div>
 
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-1.webp" class="glightbox"><img src="assets/img/menu/menu-item-1.webp" class="menu-img img-fluid" alt=""></a>
-                <h4>Porterhouse</h4>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-4.webp" class="glightbox"><img src="assets/img/menu/menu-item-4.webp" class="menu-img img-fluid" alt=""></a>
-                <h4>Tenderloin</h4>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-3.webp" class="glightbox"><img src="assets/img/menu/menu-item-3.webp" class="menu-img img-fluid" alt=""></a>
-                <h4>Ribeye</h4>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-2.webp" class="glightbox"><img src="assets/img/menu/menu-item-2.webp" class="menu-img img-fluid" alt=""></a>
-                <h4>T-Bone</h4>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-5.webp" class="glightbox"><img src="assets/img/menu/menu-item-5.webp" class="menu-img img-fluid" alt=""></a>
-                <h4>Sirloin</h4>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-6.webp" class="glightbox"><img src="assets/img/menu/menu-item-6.webp" class="menu-img img-fluid" alt=""></a>
-                <h4>Sirloin Tip</h4>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-7.webp" class="glightbox"><img src="assets/img/menu/menu-item-7.webp" class="menu-img img-fluid" alt=""></a>
-                <h4>Brisket</h4>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-8.webp class="glightbox"><img src="assets/img/menu/menu-item-8.webp" class="menu-img img-fluid" alt=""></a>
-                <h4>Roasts</h4>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-9.webp" class="glightbox"><img src="assets/img/menu/menu-item-9.webp" class="menu-img img-fluid" alt=""></a>
-                <h4>Ground Beef</h4>
-              </div><!-- Menu Item -->
-
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 menu-item text-center">
+            <div class="cut-card">
+              <a href="assets/img/menu/menu-item-1.webp" class="glightbox" data-gallery="cuts-gallery" aria-label="View Porterhouse cut larger"><img src="assets/img/menu/menu-item-1.webp" width="860" height="574" class="menu-img img-fluid" alt="Raw Porterhouse steak" loading="lazy" decoding="async"></a>
+              <h3>Porterhouse</h3>
             </div>
-          </div><!-- End Starter Menu Content -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item text-center">
+            <div class="cut-card">
+              <a href="assets/img/menu/menu-item-4.webp" class="glightbox" data-gallery="cuts-gallery" aria-label="View Tenderloin cut larger"><img src="assets/img/menu/menu-item-4.webp" width="612" height="408" class="menu-img img-fluid" alt="Raw beef tenderloin" loading="lazy" decoding="async"></a>
+              <h3>Tenderloin</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item text-center">
+            <div class="cut-card">
+              <a href="assets/img/menu/menu-item-3.webp" class="glightbox" data-gallery="cuts-gallery" aria-label="View Ribeye cut larger"><img src="assets/img/menu/menu-item-3.webp" width="860" height="860" class="menu-img img-fluid" alt="Raw marbled Ribeye steaks" loading="lazy" decoding="async"></a>
+              <h3>Ribeye</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item text-center">
+            <div class="cut-card">
+              <a href="assets/img/menu/menu-item-2.webp" class="glightbox" data-gallery="cuts-gallery" aria-label="View T-Bone cut larger"><img src="assets/img/menu/menu-item-2.webp" width="540" height="360" class="menu-img img-fluid" alt="Raw T-Bone steak" loading="lazy" decoding="async"></a>
+              <h3>T-Bone</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item text-center">
+            <div class="cut-card">
+              <a href="assets/img/menu/menu-item-5.webp" class="glightbox" data-gallery="cuts-gallery" aria-label="View Sirloin cut larger"><img src="assets/img/menu/menu-item-5.webp" width="612" height="408" class="menu-img img-fluid" alt="Raw Sirloin steaks" loading="lazy" decoding="async"></a>
+              <h3>Sirloin</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item text-center">
+            <div class="cut-card">
+              <a href="assets/img/menu/menu-item-6.webp" class="glightbox" data-gallery="cuts-gallery" aria-label="View Sirloin Tip cut larger"><img src="assets/img/menu/menu-item-6.webp" width="860" height="860" class="menu-img img-fluid" alt="Raw Sirloin Tip steaks" loading="lazy" decoding="async"></a>
+              <h3>Sirloin Tip</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item text-center">
+            <div class="cut-card">
+              <a href="assets/img/menu/menu-item-7.webp" class="glightbox" data-gallery="cuts-gallery" aria-label="View Brisket cut larger"><img src="assets/img/menu/menu-item-7.webp" width="800" height="800" class="menu-img img-fluid" alt="Raw beef brisket" loading="lazy" decoding="async"></a>
+              <h3>Brisket</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item text-center">
+            <div class="cut-card">
+              <a href="assets/img/menu/menu-item-8.webp" class="glightbox" data-gallery="cuts-gallery" aria-label="View beef roast larger"><img src="assets/img/menu/menu-item-8.webp" width="612" height="459" class="menu-img img-fluid" alt="Raw beef roast" loading="lazy" decoding="async"></a>
+              <h3>Roasts</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 menu-item text-center">
+            <div class="cut-card">
+              <a href="assets/img/menu/menu-item-9.webp" class="glightbox" data-gallery="cuts-gallery" aria-label="View Ground Beef larger"><img src="assets/img/menu/menu-item-9.webp" width="740" height="495" class="menu-img img-fluid" alt="Fresh ground beef" loading="lazy" decoding="async"></a>
+              <h3>Ground Beef</h3>
+            </div>
+          </div>
         </div>
       </div>
     </section><!-- End Menu Section -->
 
-    <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs section-bg">
+    <!-- ======= Pricing Section ======= -->
+    <section id="chefs" class="chefs pricing section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Prices</h2>
-          <p>Our <span>Beef</span> Boxes</p>
+          <p class="section-kicker">Pricing</p>
+          <h2>Choose Your <span>Beef</span></h2>
+          <p class="section-intro">Start with a ready-made box or stock your freezer with a quarter or half.</p>
         </div>
 
-        <div class="row gy-4 justify-content-center">
+        <div class="row g-4 justify-content-center">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="chef-member">
+          <div class="col-lg-5 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <article class="chef-member product-card">
               <div class="member-img">
-                <img src="assets/img/chefs/chefs-4.jpeg" class="img-fluid" alt="">
+                <img src="assets/img/chefs/beef-box-zoomed-out.webp" width="1254" height="1254" class="img-fluid" alt="BTC Beef box with steaks, roasts, and packaged ground beef shown with additional surrounding space" loading="lazy" decoding="async">
               </div>
               <div class="member-info">
-                <h4>Beef Box</h4>
-                <span>$599</span>
-                <p><strong>2 T-Bones, 2 Rib Steaks, 2 Sirloins, 3 Round Steaks, 1 Roast (3 lbs), and 16 lbs of fresh Ground Beef.</strong></p>
-                <p>A perfect balance of variety and value.</p>
+                <p class="product-label">Ready-Made Box</p>
+                <h3>Beef Box</h3>
+                <p class="product-price">$599</p>
+                <ul class="product-list">
+                  <li>2 T-Bones</li>
+                  <li>2 Rib Steaks</li>
+                  <li>2 Sirloins</li>
+                  <li>3 Round Steaks</li>
+                  <li>1 Roast (3 lb)</li>
+                  <li>16 lb Ground Beef</li>
+                </ul>
+                <p class="product-summary">A balanced selection of steaks, roast, and ground beef.</p>
+                <a class="product-cta" href="#contact" data-order-interest="Beef Box">Ask About a Beef Box <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
               </div>
-            </div>
-          </div><!-- End Chefs Member -->
+            </article>
+          </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="chef-member">
+          <div class="col-lg-5 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="180">
+            <article class="chef-member product-card">
               <div class="member-img">
-                <img src="assets/img/chefs/chefs-5.jpg" class="img-fluid" alt="">
+                <img src="assets/img/chefs/quarter-half-beef-box-marbling.webp" width="1254" height="1254" class="img-fluid" alt="Large quarter beef assortment with four boxes of richly marbled fresh red steaks and roasts" loading="lazy" decoding="async">
               </div>
               <div class="member-info">
-                <h4>Quarter/Half</h4>
-                <span>$9.99 per pound</span>
-                <p><strong>A premium assortment of T-bone, Porterhouse, Rib, Round, and Tenderloin steaks, along with Sirloin cuts, Roasts, and fresh Ground Beef.</strong></p>
-                <p>(Approx. 200-250 lbs per quarter)</p>
+                <p class="product-label">Fill Your Freezer</p>
+                <h3>Quarter or Half Beef</h3>
+                <p class="product-price">$9.99 <small>/ lb</small></p>
+                <p class="product-description">A premium assortment of T-Bone, Porterhouse, Rib, Round, Tenderloin and Sirloin steaks, plus roasts and ground beef.</p>
+                <p class="product-note">Approximately 200–250 lb per quarter. Final weight varies.</p>
+                <a class="product-cta" href="#contact" data-order-interest="Quarter or Half Beef">Ask About Quarter or Half Beef <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
               </div>
-            </div>
-          </div><!-- End Chefs Member -->
+            </article>
+          </div>
         </div>
       </div>
-    </section><!-- End Chefs Section -->
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= How to Order Section ======= -->
+    <section id="how-to-order" class="order-process">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <p class="section-kicker">Simple and Direct</p>
+          <h2>How to <span>Order</span></h2>
+          <p class="section-intro">Send us an inquiry and we will help you choose the right amount for your household.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="process-card">
+              <span class="process-number" aria-hidden="true">01</span>
+              <i class="bi bi-basket" aria-hidden="true"></i>
+              <h3>Choose an Option</h3>
+              <p>Start with a Beef Box, quarter, or half, or tell us what you have in mind.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="process-card">
+              <span class="process-number" aria-hidden="true">02</span>
+              <i class="bi bi-chat-square-text" aria-hidden="true"></i>
+              <h3>Send Your Request</h3>
+              <p>Share your contact details and city so we can review your order.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="process-card">
+              <span class="process-number" aria-hidden="true">03</span>
+              <i class="bi bi-check2-circle" aria-hidden="true"></i>
+              <h3>Confirm the Details</h3>
+              <p>We will confirm availability, final pricing, timing, and delivery details with you.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-cta text-center">
+          <a href="#contact" class="btn-book-a-table">Start Your Order</a>
+        </div>
+      </div>
+    </section><!-- End How to Order Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Contact</h2>
-          <p>Contact <span>Us</span></p>
+          <p class="section-kicker">Order Direct</p>
+          <h2>Start Your <span>Order</span></h2>
+          <p class="section-intro">Tell us what you are looking for. We will reply with availability and next steps.</p>
         </div>
 
-        <div class="mb-3">
-          <iframe style="border:0; width: 100%; height: 350px;" <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23317.161697596468!2d-79.9705103440595!3d43.06992890348615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c8d111e300985%3A0x56dca00405cb2d0c!2sCaledonia%2C%20ON!5e0!3m2!1sen!2sca!4v1759178039507!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <aside class="contact-panel">
+              <p class="contact-panel-kicker">Farm to Freezer</p>
+              <h3>Real food. Clear sourcing. A direct connection.</h3>
+              <p>Whether you are trying BTC Beef for the first time or filling a freezer, we will help you find the best fit.</p>
 
-        <div class="row gy-4">
-
-          <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-map flex-shrink-0"></i>
-              <div>
-                <h3>Our Address</h3>
-                <p>Caledonia, Ontario - CA</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>btcbeef@gmail.com</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>Upon Request</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-share flex-shrink-0"></i>
-              <div>
-                <h3>Opening Hours</h3>
-                <div><strong>Open 24/7</strong> - Order Anytime
+              <div class="contact-method">
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                <div>
+                  <strong>Raised in Caledonia</strong>
+                  <span>Ontario, Canada</span>
                 </div>
               </div>
-            </div>
-          </div><!-- End Info Item -->
+              <div class="contact-method">
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <div>
+                  <strong>Email Us</strong>
+                  <a href="mailto:btcbeef@gmail.com">btcbeef@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <div>
+                  <strong>Order Anytime</strong>
+                  <span>We will follow up to confirm the details.</span>
+                </div>
+              </div>
+            </aside>
+          </div>
 
+          <div class="col-lg-7">
+            <form action="https://formspree.io/f/mblzgvob" method="post" class="php-email-form" aria-labelledby="contact-form-title" aria-describedby="form-privacy">
+              <div class="form-heading">
+                <h3 id="contact-form-title">Order Inquiry</h3>
+                <p>Required fields are marked with an asterisk.</p>
+              </div>
+
+              <input type="hidden" name="_subject" value="New BTC Beef website inquiry">
+              <div class="honeypot" aria-hidden="true">
+                <label for="company-website">Leave this field blank</label>
+                <input type="text" name="_gotcha" id="company-website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6 form-group">
+                  <label for="name">Name <span aria-hidden="true">*</span></label>
+                  <input type="text" name="name" class="form-control" id="name" autocomplete="name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" class="form-control" name="email" id="email" autocomplete="email" inputmode="email" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="phone">Phone <span class="optional">Optional</span></label>
+                  <input type="tel" class="form-control" name="phone" id="phone" autocomplete="tel" inputmode="tel">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="city">City <span class="optional">Optional</span></label>
+                  <input type="text" class="form-control" name="city" id="city" autocomplete="address-level2" autocapitalize="words">
+                </div>
+                <div class="col-12 form-group">
+                  <label for="order-interest">I am interested in <span aria-hidden="true">*</span></label>
+                  <select class="form-select" name="order-interest" id="order-interest" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="Beef Box">Beef Box</option>
+                    <option value="Quarter">Quarter</option>
+                    <option value="Half">Half</option>
+                    <option value="General Question">I have a general question</option>
+                  </select>
+                </div>
+                <div class="col-12 form-group">
+                  <label for="message">Questions or order details <span aria-hidden="true">*</span></label>
+                  <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
+                </div>
+              </div>
+
+              <div class="form-status" aria-live="polite" aria-atomic="true">
+                <div class="loading" role="status">Sending your inquiry…</div>
+                <div class="error-message" role="alert"></div>
+                <div class="sent-message" role="status">Your inquiry has been sent. We will be in touch soon.</div>
+              </div>
+              <div class="form-submit">
+                <button type="submit">Send Order Inquiry</button>
+                <p id="form-privacy">Your details are used only to respond to this inquiry.</p>
+              </div>
+            </form>
+          </div>
         </div>
-
-        <form action="https://formspree.io/f/mblzgvob" method="post" role="form" class="php-email-form p-3 p-md-4">
-          <div class="row">
-            <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
-        <!--End Contact Form -->
 
       </div>
     </section><!-- End Contact Section -->
@@ -440,33 +565,32 @@
     <div class="container">
       <div class="row gy-3">
         <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
+          <i class="bi bi-geo-alt icon" aria-hidden="true"></i>
           <div>
-            <h4>Address</h4>
+            <h4>Our Farm</h4>
             <p>
-              Caledonia, Ontario - CA<br>
+              Caledonia, Ontario, Canada<br>
             </p>
           </div>
 
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-telephone icon"></i>
+          <i class="bi bi-envelope icon" aria-hidden="true"></i>
           <div>
             <h4>Contact Us</h4>
             <p>
-              <strong>Phone:</strong> Upon Request<br>
-              <strong>Email:</strong> btcbeef@gmail.com<br>
+              <a href="mailto:btcbeef@gmail.com">btcbeef@gmail.com</a><br>
             </p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-clock icon"></i>
+          <i class="bi bi-clock icon" aria-hidden="true"></i>
           <div>
-            <h4>Opening Hours</h4>
+            <h4>Order Inquiries</h4>
             <p>
-              Open 24/7 - Order Anytime<br>
+              Accepted online anytime<br>
             </p>
           </div>
         </div>
@@ -474,7 +598,7 @@
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Follow Us</h4>
           <div class="social-links d-flex">
-            <a href="https://x.com/BTCBeefCA" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://x.com/BTCBeefCA" class="twitter" aria-label="Follow BTC Beef on X"><i class="bi bi-twitter" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -483,23 +607,20 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; BTC Beef <strong><span>2025</span></strong>. All Rights Reserved
+        &copy; <span id="copyright-year">2026</span> BTC Beef. All rights reserved.
       </div>
-      
+
     </div>
 
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader"></div>
+  <a href="#hero" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
