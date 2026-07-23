@@ -1,6 +1,6 @@
 # BTC Beef
 
-Static website for [BTC Beef](https://btcbeef.com), a farm-direct Red Angus beef business in Caledonia, Ontario.
+Static website for [BTC Beef](https://btcbeef.com), a farm-direct Red Angus beef business.
 
 ## Local preview
 
