@@ -317,7 +317,7 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .navbar {
     padding: 0;
   }
@@ -445,7 +445,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1366px) {
+@media (min-width: 992px) and (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
@@ -455,7 +455,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
 
   .mobile-nav-show,
   .mobile-nav-hide {
@@ -466,7 +466,7 @@ section {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
-@media (max-width: 1279px) {
+@media (max-width: 991px) {
   .navbar {
     position: fixed;
     top: 0;

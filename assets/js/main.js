@@ -111,14 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Image lightboxes and farm gallery
    */
-  if (typeof GLightbox === 'function') {
-    GLightbox({
-      selector: '.glightbox',
-      loop: true,
-      touchNavigation: true
-    });
-  }
-
   const gallery = document.querySelector('.gallery-slider');
   if (gallery && typeof Swiper === 'function') {
     new Swiper(gallery, {
@@ -152,6 +144,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
+  }
+
+  if (typeof GLightbox === 'function') {
+    const farmLightbox = GLightbox({
+      selector: '.gallery-slider .swiper-slide:not(.swiper-slide-duplicate) .glightbox',
+      loop: true,
+      slideEffect: 'fade',
+      touchNavigation: true
+    });
+
+    GLightbox({
+      selector: '.menu .glightbox',
+      loop: true,
+      slideEffect: 'fade',
+      touchNavigation: true
+    });
+
+    if (gallery) {
+      gallery.addEventListener('click', (event) => {
+        const duplicateLink = event.target.closest?.('.swiper-slide-duplicate .glightbox');
+        if (!duplicateLink) return;
+
+        const duplicateSlide = duplicateLink.closest('.swiper-slide');
+        const originalIndex = Number.parseInt(duplicateSlide?.dataset.swiperSlideIndex ?? '', 10);
+        if (!Number.isInteger(originalIndex)) return;
+
+        event.preventDefault();
+        event.stopPropagation();
+        farmLightbox.openAt(originalIndex);
+      });
+    }
   }
 
   /**
