@@ -509,6 +509,7 @@ section {
 
 .gallery {
   padding-top: 48px;
+  padding-bottom: 36px;
 }
 
 .gallery .swiper-slide a {
@@ -819,6 +820,7 @@ section {
 
 /* Contact and inquiry form */
 .contact {
+  padding-top: 32px;
   background: var(--color-surface);
 }
 
@@ -1073,6 +1075,10 @@ section {
 @media (max-width: 767px) {
   section {
     padding: 66px 0;
+  }
+
+  .gallery {
+    padding-bottom: 28px;
   }
 
   .section-header {
