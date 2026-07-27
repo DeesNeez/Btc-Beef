@@ -2271,6 +2271,7 @@ section {
   font-family: var(--font-primary);
   font-size: 36px;
   line-height: 1.15;
+  scroll-margin-top: 110px;
 }
 
 .article-body h3 {
@@ -2278,6 +2279,17 @@ section {
   color: var(--color-secondary);
   font-family: var(--font-primary);
   font-size: 25px;
+  scroll-margin-top: 110px;
+}
+
+.cut-guide td a {
+  font-weight: 700;
+  text-decoration-color: rgba(184, 15, 18, 0.35);
+}
+
+.cut-guide td a:hover,
+.cut-guide td a:focus-visible {
+  text-decoration-color: currentColor;
 }
 
 .article-body li + li {
