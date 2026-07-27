@@ -1,3 +1,4 @@
 /sample-inner-page.html
 node_modules/
 dist/
+.local-preview/
