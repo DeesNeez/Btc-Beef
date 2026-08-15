@@ -2,3 +2,18 @@
 node_modules/
 dist/
 .local-preview/
+
+# Originals of the live .webp images. Kept locally as the clean source for
+# re-encoding; not served, so not tracked.
+assets/img/menu/hero.jpg
+assets/img/gallery/gallery-8.jpg
+assets/img/gallery/gallery-4.jpg
+assets/img/gallery/gallery-1.jpg
+assets/img/gallery/gallery-3.jpg
+assets/img/gallery/gallery-2.jpg
+assets/img/gallery/gallery-5.jpg
+assets/img/gallery/gallery-6.jpg
+assets/img/about-3.jpeg
+
+# Derived from the icon subset (regenerate with: npm run icons:subset)
+scripts/.icon-unicodes.txt
