@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "validate": "html-validate index.html && node scripts/check-site.mjs"
+    "validate": "html-validate index.html && node scripts/check-site.mjs",
+    "icons:subset": "node scripts/subset-icons.mjs"
   },
   "devDependencies": {
     "html-validate": "11.5.6",
